@@ -1,0 +1,147 @@
+@font-face {
+    font-family: Tanha;
+    src: url("../fonts/tanha/Tanha.eot");
+    src: url("../fonts/tanha/Tanha.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/tanha/Tanha.woff") format('woff'),
+         url("../fonts/tanha/Tanha.ttf") format('truetype');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url("../fonts/vazirmatn/Vazirmatn-RD-ExtraBold.woff2") format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+body{
+   direction:rtl;
+    margin:0;
+    font-family: Tanha;
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family:vazirmatn;
+}
+ul , ol{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    transition: all 0.3s;
+}
+* , *:befor , *:after{
+    box-sizing:border-box;
+}
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+.header{
+    padding:15px 0;
+    position:fixed;
+    background:#fff;
+    z-index:2;
+    width:100%;
+}
+.header .header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header .header-container h3{
+    color:#093a58;
+}
+.header .main-menu ul{
+    display:flex;
+    gap:5px;
+}
+.header .main-menu ul li a{
+    display:block;
+    padding:5px 15px;
+    color:#3acec2;
+}
+.header .main-menu ul li a:hover{
+    color:#093a58
+}
+.hero-section {
+    color:#fff;
+    text-align:center;
+    background-color: #3acec2;
+    padding:147px 0 45px 0;
+}
+.hero-section img{
+    width:150px;
+    height:auto;
+}
+.hero-section p{
+    margin:0;
+    font-size: 20px;
+}
+.content{
+    margin:30px 0;
+}
+.content .content-container{
+    display:flex;
+    gap:20px;
+}
+.content .content-container h3{
+    color:#093a58;
+    padding:10px 0;
+}
+.content .content-container .text-1 ,.content .content-container .text-3{
+    width:30%;
+}
+.content .content-container .text-2{
+    width:40%;
+}
+.content .content-container .text-2 .holder-coment{
+    position:relative;
+    text-align: center;
+    color:#fff;
+}
+.content .content-container .text-2 .holder-coment .coment{
+    position:absolute;
+    bottom:0;
+    right:0;
+    background: rgba(19, 43, 102, .85);
+    padding:5px;
+    line-height: 19px;
+}
+.footer{
+    background: #d9e4ea;
+    text-align: center;
+    padding:30px 0;
+}
+@media (max-width:1200px){
+    .container{
+        width:100%;
+    }
+
+}
+@media (max-width:900px){
+    .content .content-container{
+        flex-wrap:wrap;
+        gap:0;
+    }
+    .content .content-container .text-1 ,.content .content-container .text-2{
+        width:50%;
+    }
+    .content .content-container .text-3{
+        width:100%;
+    }
+}
+@media (max-width:650px){
+    .content .content-container .text-1 ,.content .content-container .text-2 ,.content .content-container .text-3{
+        width:100%;
+    }
+}
+@media (max-width:500px){
+    .header .header-container{
+        flex-wrap:wrap;
+        justify-content:center;
+    } 
+    .header{
+        text-align: center;
+    }
+}
